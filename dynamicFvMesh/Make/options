@@ -5,7 +5,7 @@ EXE_INC = \
     -I$(LIB_SRC)/dynamicMesh/lnInclude \
     -I$(LIB_SRC)/dynamicFvMesh/lnInclude \
     -I$(FOAM_SRC)/fvMotionSolver/lnInclude \
-    -I$(WM_PROJECT_USER_DIR)/src/dynamicMeshRefine_2D+Axi_v9/dynamicMesh/lnInclude
+    -I$(WM_PROJECT_USER_DIR)/src/dynamicMeshRefine_2D-Axi_v9/dynamicMesh/lnInclude
 
 LIB_LIBS = \
     -ltriSurface \
