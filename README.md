@@ -3,8 +3,8 @@
 Allows dynamic meshing in 2D planar and axisymmetric geometries.  
 Based on the OpenFOAM 3D dynamic meshing.
 
-Author:        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)  
-Version:       Adapted to OpenFOAM v9
+*Author:*        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)  
+*Version:*       Adapted to OpenFOAM v9
 
 ## Installation/Compiling
    Copy the entire directory to:  $WM_PROJECT_USER_DIR/src/.  
