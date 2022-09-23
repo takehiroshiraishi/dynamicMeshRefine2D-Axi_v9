@@ -1,4 +1,4 @@
-# dynamicMeshRefine2D+Axi_v9
+# dynamicMeshRefine2D-Axi_v9
 2D and Axisymmetric Dynamic Mesh Refinement Libraries.  
 Allows dynamic meshing in 2D planar and axisymmetric geometries.  
 Based on the OpenFOAM 3D dynamic meshing.
@@ -10,10 +10,10 @@ Version:       Adapted to OpenFOAM v9
    Copy the entire directory to:  $WM_PROJECT_USER_DIR/src/.  
    Then compile as follows.
    ```
-   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicMesh
+   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D-Axi_v9/dynamicMesh
    $ wclean
    $ wmake libso
-   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicFvMesh
+   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D-Axi_v9/dynamicFvMesh
    $ wclean
    $ wmake libso
    ```
