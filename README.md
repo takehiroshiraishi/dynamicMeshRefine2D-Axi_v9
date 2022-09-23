@@ -1,7 +1,6 @@
 # dynamicMeshRefine2D+Axi_v9
 
-2D and Axisymmetric Dynamic Mesh Refinement Libraries
-=====================================================
+2D and Axisymmetric Dynamic Mesh Refinement Libraries.
 Allows dynamic meshing in 2D planar and axisymmetric geometries.
 Based on the OpenFOAM  3D dynamic meshing.
 
