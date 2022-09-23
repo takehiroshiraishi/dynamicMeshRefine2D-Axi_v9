@@ -1,7 +1,7 @@
 # dynamicMeshRefine2D+Axi_v9
 2D and Axisymmetric Dynamic Mesh Refinement Libraries.  
-Allows dynamic meshing in 2D planar and axisymmetric geometries.
-Based on the OpenFOAM  3D dynamic meshing.
+Allows dynamic meshing in 2D planar and axisymmetric geometries.  
+Based on the OpenFOAM 3D dynamic meshing.
 
 Author:        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)  
 Version:       Adapted to OpenFOAM v9
@@ -21,17 +21,20 @@ Version:       Adapted to OpenFOAM v9
 ## Running the Tutorial:   2d-dropInShearFlowCa0.3
 
 1) Changes to <caseDir>/constant/dynamicMeshDict:
-   a) 2D planar geometry:
-      dynamicRefineFvMesh       ---> dynamicRefineFvMesh2D  
-      dynamicRefineFvMeshCoeffs ---> dynamicRefineFvMesh2DCoeffs
+   a) 2D planar geometry:  
+   
+      dynamicRefineFvMesh       ---> dynamicRefineFvMesh2D   
+      dynamicRefineFvMeshCoeffs ---> dynamicRefineFvMesh2DCoeffs  
       Parameter values:
+      
         "axis" = 0: x-axis is normal to "empty" faces and min(x)<"axisVal"<max(x)
         "axis" = 1: y-axis is normal to "empty" faces and min(y)<"axisVal"<max(y)
         "axis" = 2: z-axis is normal to "empty" faces and min(z)<"axisVal"<max(z)
 
    b) Axisymmetric geometry:
-      dynamicRefineFvMesh       ---> dynamicRefineFvMeshAxi
-      dynamicRefineFvMeshCoeffs ---> dynamicRefineFvMeshAxiCoeffs
+   
+      dynamicRefineFvMesh       ---> dynamicRefineFvMeshAxi  
+      dynamicRefineFvMeshCoeffs ---> dynamicRefineFvMeshAxiCoeffs  
       Parameter values: 
    
         "axis" = 0: x-axis is normal to "wedge" faces and "axisVal" = centerLine x-value
