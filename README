@@ -4,16 +4,16 @@ Allows dynamic meshing in 2D planar and axisymmetric geometries.
 Based on the OpenFOAM  3D dynamic meshing.
 
 
-Author:        K Srinivasa Sagar (Original code: Ahmad Baniabedalruhman)
-Version:       Adapted to OpenFOAM 2.4.0
+Author:        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)
+Version:       Adapted to OpenFOAM v9
 
 Installation/Compiling
 ----------------------
 1. Copy the entire directory to:  $WM_PROJECT_USER_DIR/src/
-2. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi/dynamicMesh
+2. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicMesh
 3. wclean
    wmake libso
-4. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi/dynamicFvMesh
+4. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicFvMesh
 5. wclean
    wmake libso
 
