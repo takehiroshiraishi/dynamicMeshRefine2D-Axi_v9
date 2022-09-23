@@ -1,24 +1,24 @@
 # dynamicMeshRefine2D+Axi_v9
-
-2D and Axisymmetric Dynamic Mesh Refinement Libraries.
+2D and Axisymmetric Dynamic Mesh Refinement Libraries.  
 Allows dynamic meshing in 2D planar and axisymmetric geometries.
 Based on the OpenFOAM  3D dynamic meshing.
 
-Author:        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)
+Author:        Takehiro Shiraishi (Original code: Ahmad Baniabedalruhman)  
 Version:       Adapted to OpenFOAM v9
 
 ## Installation/Compiling
-----------------------
-1. Copy the entire directory to:  $WM_PROJECT_USER_DIR/src/
-2. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicMesh
-3. wclean
-   wmake libso
-4. cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicFvMesh
-5. wclean
-   wmake libso
+   Copy the entire directory to:  $WM_PROJECT_USER_DIR/src/.  
+   Then compile as follows.
+   ```
+   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicMesh
+   $ wclean
+   $ wmake libso
+   $ cd $WM_PROJECT_USER_DIR/src/dynamicMeshRefine_2D+Axi_v9/dynamicFvMesh
+   $ wclean
+   $ wmake libso
+   ```
 
 ## Running the Tutorial:   2d-dropInShearFlowCa0.3
------------------------------------------------
 
 1) Changes to <caseDir>/constant/dynamicMeshDict:
    a) 2D planar geometry:
@@ -32,7 +32,8 @@ Version:       Adapted to OpenFOAM v9
    b) Axisymmetric geometry:
       dynamicRefineFvMesh       ---> dynamicRefineFvMeshAxi
       dynamicRefineFvMeshCoeffs ---> dynamicRefineFvMeshAxiCoeffs
-      Parameter values:
+      Parameter values: 
+   
         "axis" = 0: x-axis is normal to "wedge" faces and "axisVal" = centerLine x-value
         "axis" = 1: y-axis is normal to "wedge" faces and "axisVal" = centerLine y-value
         "axis" = 2: z-axis is normal to "wedge" faces and "axisVal" = centerLine z-value
@@ -41,5 +42,5 @@ Version:       Adapted to OpenFOAM v9
 2) Run the case:
    a) run "blockMesh"
    b) run "setFields"
-   c) run "interDyMFoam"
+   c) run "interFoam"
 
